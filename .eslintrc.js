@@ -3,21 +3,21 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
-    'vue/setup-compiler-macros': true
+    'vue/setup-compiler-macros': true,
   },
   extends: [
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
     'plugin:vue/vue3-strongly-recommended',
     'plugin:prettier/recommended',
-    'prettier'
+    'prettier',
   ],
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   plugins: ['vue', 'prettier'],
   rules: {
@@ -27,6 +27,7 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
     'vue/multi-word-component-names': 'off',
-    'space-before-function-paren': 'off'
-  }
+    'space-before-function-paren': 'off',
+    'prettier/prettier': ['error', { trailingComma: 'es5' }],
+  },
 }

@@ -1,4 +1,4 @@
-// prettier.config.js or .prettierrc.js
+// prettier.config.js or .prettierrc.js https://prettier.io/docs/en/options.html
 module.exports = {
   // 一行最多 100 字符
   printWidth: 100,
@@ -10,8 +10,8 @@ module.exports = {
   quoteProps: 'as-needed',
   // jsx 不使用单引号，而使用双引号
   jsxSingleQuote: false,
-  // 末尾不需要逗号
-  trailingComma: 'none',
+  // 末尾逗号在 ES5 合法
+  trailingComma: 'es5',
   // 大括号内的首尾需要空格
   bracketSpacing: true,
   // jsx 标签的反尖括号需要换行
@@ -30,5 +30,5 @@ module.exports = {
   // 根据显示样式决定 html 要不要折行
   htmlWhitespaceSensitivity: 'css',
   // 换行符使用 lf
-  endOfLine: 'lf'
+  endOfLine: 'lf',
 }
